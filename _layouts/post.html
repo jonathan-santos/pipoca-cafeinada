@@ -1,35 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  {% include head.html %}
-
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+{% include head.html %}
+<body>
   {% include header.html %}
 
-  <body>
-    <section class="post-wrapper">
-      <p class="post-date">{{ page.date }}</p>
-    </section>
-    <h1 class="post-title">Building a blog using Jekyll. Creating custom&nbsp;layouts</h1>
+  <div class="page-content">
+    <p class="post-date">{{page.date|date_to_long_string}}</p>
+  
+    <h1 class="post-title">{{page.title}}</h1>
+  
+    {% if page.tags %}
+      <small>tags: <em>{{ page.tags | join: "</em>, <em>" }}</em></small>
+    {% endif %}
+  
     <article class="post-content">
       {{content}}
     </article>
-  </body>
+  </div>
 
   {% include footer.html %}
+</body>
 </html>
-
-
-<!-- ---
-layout: default
----
-
-<small>{{ page.date | date: "%-d %B %Y" }}</small>
-<h1>{{ page.title }}</h1>
-
-<p class="view">by {{ page.author | default: site.author }}</p>
-
-{{content}}
-
-{% if page.tags %}
-  <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-{% endif %} -->

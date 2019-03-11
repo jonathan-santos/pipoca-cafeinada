@@ -2,8 +2,6 @@
 layout: default
 ---
 
-## Hi this is my site
+## Pipoca Cafeinada
 
-This is the **index** page.
-
-This site is built with Jekyll.
+{{ site.description }}
