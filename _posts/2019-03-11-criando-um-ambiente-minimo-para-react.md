@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Criando um ambiente mínimo para React com Webpack 4 e Babel 7"
+title:  "Criando um ambiente mínimo para React com Webpack 4 e Babel 7 parte I"
 tags: dev web react js
 ---
 
@@ -50,18 +50,18 @@ Preencha o `index.html` com o seguinte código:
 
 ## Criando o /src
 
-Crie a pasta `/src`, onde estará o código do nosso projeto, de início, teremos o `index.js` (ponto de entrada da nossa aplicação React) e o `app.jsx` (Componente base da aplicação):
+Crie a pasta `/src`, onde estará o código do nosso projeto, de início, teremos o `index.js` (ponto de entrada da nossa aplicação React) e o `app.jsx`, que será  o componente base da nossa aplicação (detalhe: usamos a extensão `.jsx` para que haja uma melhor integração com editores de texto com o React):
 {% highlight bash %}
 mkdir src
 touch src/index.js
-touch src/app.js
+touch src/app.jsx
 {% endhighlight %}
 
 Preencha o `index.js` com o seguinte código:
 {% highlight javascript %}
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app';
+import App from './app.jsx';
 
 ReactDOM.render(
     <App />,
@@ -69,7 +69,7 @@ ReactDOM.render(
 );
 {% endhighlight %}
 
-Preencha o `app.js` com o seguinte código:
+Preencha o `app.jsx` com o seguinte código:
 {% highlight javascript %}
 import React from 'react';
 
@@ -150,7 +150,7 @@ O comando build que criamos compilará o arquivo `main.js` dentro de `/dist`:
 npm run build
 {% endhighlight %}
 
-O Webpack irá criar um bundle de todo os seus arquivos .js e .jsx dentro de `/src` no arquivo `main.js` que estará dentro da pasta `/dist`. Então se você abrir o seu arquivo `index.html` dentro de `/dist`, você deverá ver:
+O Webpack irá criar um bundle de todo os seus arquivos .js e .jsx dentro de `/src` no arquivo `main.js` que estará dentro da pasta `/dist`. Então se você abrir o seu arquivo `index.html`, você deverá ver:
 
 ![Resultado da aplicação executada](/assets/img/resultadoAmbienteMinimoReact.jpg)
 
@@ -162,12 +162,14 @@ touch .gitignore
 Coloque o seguinte código no `.gitignore`:
 {% highlight gitignore %}
 /node_modules/
-/dist/main.js
+/dist/
 {% endhighlight %}
 
 Um repositório com o resultado final do passo a passo deste post está disponível [aqui][link-repositorio].
 
 E é isso por hoje, há muito mais que podemos adicionar a o nosso projeto para facilitar ainda mais o desenvolvimento dos nosso projetos como um servidor de hot-reloading para desenvolvimento, compilação de sass para css com o webpack e até um simples servidor node + express que mandará a nossa aplicação ao ar, mas isso fica para uma próxima vez. Espero que tenha gostado e até a próxima!
+
+Atualização: Veja a parte 2 do ambiente mínimo [aqui][segunda-parte-post]
 
 Música do post: [Adam Joseph ft. Lady Gaga - 100 PEOPLE][musica-do-post], encontrei essa música no twitter esses dias atrás junto com um vídeo de umas garotas dançando muito bem, [se divirta][origem-musica-do-post].
 
@@ -176,6 +178,7 @@ Música do post: [Adam Joseph ft. Lady Gaga - 100 PEOPLE][musica-do-post], encon
 [npm-tutorial-en]: https://medium.com/beginners-guide-to-mobile-web-development/introduction-to-npm-and-basic-npm-commands-18aa16f69f6b
 [cmd-tutorial-pt]: https://tutorial.djangogirls.org/pt/intro_to_command_line/
 [cmd-tutorial-en]: https://tutorial.djangogirls.org/en/intro_to_command_line/
-[link-repositorio]: https://github.com/jonathan-santos/react-ambiente-minimo
+[link-repositorio]: https://github.com/jonathan-santos/react-ambiente-minimo/tree/1.0.1
 [musica-do-post]: https://www.youtube.com/watch?v=4Tyval51ML4"
 [origem-musica-do-post]: https://twitter.com/GagaDelGrey/status/1101940272571842564
+[segunda-parte-post]: /2019/04/01/criando-um-ambiente-minimo-para-react-2.html
