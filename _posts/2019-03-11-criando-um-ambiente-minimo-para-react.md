@@ -99,7 +99,7 @@ touch .babelrc
 Coloque o seguinte código no `.babelrc`:
 {% highlight javascript %}
 {
-    "presets": ["@babel/preset-env", "@babel/npreset-react"]
+    "presets": ["@babel/preset-env", "@babel/preset-react"]
 }
 {% endhighlight %}
 
