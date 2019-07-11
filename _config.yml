@@ -64,3 +64,5 @@ theme: landscape
 # Deployment
 deploy:
   type: git
+  repo: git@github.com:jonathan-santos/pipocacafeinada.git
+  branch: master
