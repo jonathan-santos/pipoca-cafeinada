@@ -1,0 +1,35 @@
+body {
+    background-color: red;
+}
+
+.posts {
+    padding: 0 20%;
+    background-color: blue;
+}
+
+.post {
+    margin: 0.5rem 0;
+    border: 1px solid black;
+}
+
+.post .details {
+    padding: 0 0.5rem;
+    display: flex;
+}
+
+    .post .details .tag {
+        flex: 1;
+    }
+
+    .post .details .date {
+        text-align: right;
+        flex: 1;
+    }
+
+.post .title {
+
+}
+
+.post .excerpt {
+
+}

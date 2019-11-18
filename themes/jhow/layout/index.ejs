@@ -3,21 +3,25 @@
 <main class='index'>
     <img class='top-image' src="pipoca.jpg">
 
-    <h1>Posts</h1>
+    <div class="posts">
+        <% site.posts.each(function(post, i) { %>
 
-    <% site.posts.each(function(post, i) { %>
-        <div class='post'>
-            <div class='detalhes'>
-                <div class="tags">
-                    <% post.tags.each(function(tag, i) { %>
-                        <span class='tag'><%- tag.name %></span>
-                    <% }) %>
+            <!-- <%- url_for(post.path) %> -->
+
+            <div class='post'>
+                <div class='details'>
+                    <div class="tags">
+                        <% post.tags.each(function(tag, i) { %>
+                            <span class='tag'><%- tag.name %></span>
+                        <% }) %>
+                    </div>
+
+                    <span class='date'><%- date(post.date, 'DD/MM/YYYY') %></span>
                 </div>
-                <span class='data'><%- post.date %></span>
+                
+                <h2 class='title'><%- post.title %></h2>
+                <p class='synopsis'><%- truncate(post.content, { length: 10, omission: '...' }) %></p>
             </div>
-            
-            <h2 class='title'><%- post.title %></h2>
-            <p class='excerpt'><%- post.excerpt %></p>
-        </div>
-    <% }) %>
+        <% }) %>
+    </div>
 </main>

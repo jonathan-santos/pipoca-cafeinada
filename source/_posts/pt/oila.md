@@ -5,7 +5,6 @@ date: 2019-03-06
 tags:
 - introdução
 - oilá
-excerpt: Então né, olá mundo! Seja você quem for, boas vindas ao Pipoca Cafeinada!
 ---
 Então né, olá mundo! Seja você quem for, boas vindas ao Pipoca Cafeinada! Este é um blog sobre variedades. Você pode estar se perguntando como quais? Então: jogos, programação, 3D, Arte, música, filmes, séries, design, web e etc e etc. O blog neste exato momento, ainda está no processo de criação, então o design ainda não está pronto, aqui um rascunho (muito bem feito) sobre minha ideia de como ele vai ficar:
 {% asset_img "primeiroEsbocoPipocaCafeinada.jpg" "Meu rascunho do Pipoca Cafeinada" %}
