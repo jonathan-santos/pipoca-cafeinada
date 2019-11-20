@@ -10,8 +10,24 @@
         - <%- page.title %>
         <% } %>
     </title>
+
+    <link rel="stylesheet" href="layout.css">
+
+    <style>
+        html {
+            --primary-color: <%- config.primaryColor %>;
+            --secondary-color: <%- config.secondaryColor %>;
+            --text-light-color: <%- config.textLightColor %>;
+            --text-dark-color: <%- config.textDarkColor %>;
+        }
+    </style>
 </head>
 <body>
     <%- body %>
+
+    <footer>
+        <p>Feito por mim com HTML, CSS <a href='https://hexo.io' target='_blank'>Hexo</a>, Amor e café</p>
+        <p>Curiosidade de como o blog foi feito? <a href='https://github.com/jonathan-santos/pipocacafeinada' target='_blank'>Acesse o repositório do projeto</a></p>
+    </footer>
 </body>
 </html>

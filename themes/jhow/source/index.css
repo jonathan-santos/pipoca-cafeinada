@@ -1,35 +1,57 @@
-body {
-    background-color: red;
+/* #region Title */
+.area-title {
+    height: 10rem;
+    padding: 1rem;
+    text-align: center;
+    color: #333;
 }
 
+    .area-title .title {
+        font-size: 3rem;
+    }
+
+    .area-title .description {
+        font-size: 1.3rem;
+    }
+/* #endregion */
+
+/* #region posts */
 .posts {
-    padding: 0 20%;
-    background-color: blue;
+    border-top: 1px solid #000;
+    padding: 0.5rem 20%;
 }
 
-.post {
-    margin: 0.5rem 0;
-    border: 1px solid black;
-}
-
-.post .details {
-    padding: 0 0.5rem;
-    display: flex;
-}
-
-    .post .details .tag {
-        flex: 1;
+    .post {
+        margin: 1rem 0;
+        padding: 0.5rem;
+        border: 1px solid black;
+        border-radius: 5px;
     }
 
-    .post .details .date {
-        text-align: right;
-        flex: 1;
+    .post .details {
+        padding: 0 0.5rem;
+        display: flex;
     }
 
-.post .title {
+        .post .details .tag {
+            padding: 0.2rem;
+            border-radius: 10px;
+            background-color: var(--primary-color);
+            flex: 1;
+        }
 
-}
+        .post .details .date {
+            text-align: right;
+            flex: 1;
+        }
 
-.post .excerpt {
+        .post .title {
+            margin: 0.5rem 0;
+            font-size: 1.15rem;
+        }
 
-}
+        .post .synopsis {
+            margin: 0;
+            font-size: 1rem;
+        }
+/* #endregion */

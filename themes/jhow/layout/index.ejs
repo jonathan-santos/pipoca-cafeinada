@@ -1,7 +1,11 @@
 <link rel="stylesheet" href='index.css'>
 
 <main class='index'>
-    <img class='top-image' src="pipoca.jpg">
+    <div class="area-title">
+        <h1 class='title'><%- config.title %></h1>
+
+        <p class='description'><%- config.description %></p>
+    </div>
 
     <div class="posts">
         <% site.posts.each(function(post, i) { %>
@@ -19,8 +23,13 @@
                     <span class='date'><%- date(post.date, 'DD/MM/YYYY') %></span>
                 </div>
                 
-                <h2 class='title'><%- post.title %></h2>
-                <p class='synopsis'><%- truncate(post.content, { length: 10, omission: '...' }) %></p>
+                <a href='<%- post.path %>' class='no-underline'>
+                    <h2 class='title'><%- post.title %></h2>
+
+                    <% if (post.synopsis) { %>
+                        <p class='synopsis'><%- post.synopsis %>...</p>
+                    <% } %>
+                </a>
             </div>
         <% }) %>
     </div>

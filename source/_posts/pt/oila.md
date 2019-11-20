@@ -2,6 +2,7 @@
 title:  Oilá
 layout: post
 date: 2019-03-06
+synopsis: Então né, olá mundo! Seja você quem for, boas vindas ao Pipoca Cafeinada, deixe-me explicar do que se trata esse blog
 tags:
 - introdução
 - oilá

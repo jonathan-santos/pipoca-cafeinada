@@ -1,7 +1,10 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
-  "private": true,
+  "name": "pipoca-cafeinada",
+  "version": "0.2.1",
+  "scripts": {
+    "start": "hexo serve --dev --open",
+    "publish": "hexo deploy"
+  },
   "hexo": {
     "version": "3.9.0"
   },
