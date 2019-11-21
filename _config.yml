@@ -64,7 +64,7 @@ theme: jhow
 # Deployment
 deploy:
   type: git
-  repo: git@github.com:jonathan-santos/pipocacafeinada.git
+  repo: https://github.com/jonathan-santos/pipocacafeinada-generated
   branch: master
 
 # Custom
