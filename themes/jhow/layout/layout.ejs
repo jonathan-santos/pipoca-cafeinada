@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>
         <%- config.title %>
         <%if (page.title != null && page.title.length > 0) { %>
@@ -11,7 +11,7 @@
         <% } %>
     </title>
 
-    <link rel="stylesheet" href="layout.css">
+    <link rel='stylesheet' href='layout.css'>
 
     <style>
         html {
@@ -23,6 +23,36 @@
     </style>
 </head>
 <body>
+    
+    <label for='input-menu' role='button' aria-label='Menu' class='menu-button'>
+        M
+    </label>
+    <input id='input-menu' type='checkbox' hidden />
+
+    <header class='menu'>
+        <label for='input-menu' class='menu-close' tabindex='-1' aria-hidden='true'></label>
+        <nav role='navigation'>
+            <div class='area-logo' aria-hidden='true'>
+                <div class='logo'>
+                    <img src='logo.png'>
+                </div>
+            </div>
+            <ul>
+                <li class=''>
+                    <a href='/' class='selected'>Home</a>
+                </li>
+
+                <% site.pages.each(function(page, i) { %>
+                    <li>
+                        <a href='<%- url_for(page.path) %>'>
+                            <%- titlecase(page.title) %>
+                        </a>
+                    </li>
+                <% }) %>
+            </ul>
+        </nav>
+    </header>
+
     <%- body %>
 
     <footer>

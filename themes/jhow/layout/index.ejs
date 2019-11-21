@@ -1,20 +1,20 @@
-<link rel="stylesheet" href='index.css'>
+<link rel='stylesheet' href='index.css'>
 
 <main class='index'>
-    <div class="area-title">
+    <div class='area-title'>
         <h1 class='title'><%- config.title %></h1>
 
         <p class='description'><%- config.description %></p>
     </div>
 
-    <div class="posts">
+    <div class='posts'>
         <% site.posts.each(function(post, i) { %>
 
             <!-- <%- url_for(post.path) %> -->
 
             <div class='post'>
                 <div class='details'>
-                    <div class="tags">
+                    <div class='tags'>
                         <% post.tags.each(function(tag, i) { %>
                             <span class='tag'><%- tag.name %></span>
                         <% }) %>
