@@ -28,6 +28,19 @@ main {
     min-height: 100%;
     padding-bottom: 10rem;
 }
+
+.highlight {
+    background-color: var(--secondary-color);
+    color: var(--text-light-color);
+}
+
+    .highlight .gutter {
+        border-right: 1px solid  var(--text-light-color);
+    }
+
+    .highlight .code {
+        padding-left: 0.2rem;
+    }
 /* #endregion */
 
 /* #region Helper classes */
