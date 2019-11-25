@@ -24,10 +24,18 @@
     </style>
 </head>
 <body>
+
+    <% if(!is_home()) { %>
+        <a href='/' class='home-button'>
+            H
+        </a>
+    <% } %>
+
     
     <label for='input-menu' role='button' aria-label='Menu' class='menu-button'>
         M
     </label>
+
     <input id='input-menu' type='checkbox' hidden />
 
     <header class='menu'>

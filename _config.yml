@@ -73,7 +73,7 @@ primaryColor: '#ff2d9a'
 secondaryColor: '#1a2a3a'
 textLightColor: '#eee'
 textDarkColor: '#333'
-backgroudnColor: '#eee'
+backgroundColor: '#eee'
 
 ## Posts
 topPosts: ['pt/criando-um-ambiente-minimo-para-react-2', 'pt/criando-um-ambiente-minimo-para-react-1', 'pt/oila' ]
