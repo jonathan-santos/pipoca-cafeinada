@@ -1,5 +1,5 @@
 <label for='input-menu' role='button' aria-label='Menu' class='menu-button'>
-    <i class='icon-hamburguer-menu'></i>
+    <i class='icon-menu'></i>
 </label>
 
 <input id='input-menu' type='checkbox' hidden />
@@ -22,21 +22,21 @@
             </li>
 
             <li class='link'>
-                <a href='/sobre.html' class='<%- page.title == 'sobre' && 'selected' %>'>
-                    <i class="icon-user"></i>
-                    Sobre
+                <a href='/faq.html' class='<%- page.title == 'faq' && 'selected' %>'>
+                    <i class="icon-faq"></i>
+                    FAQ
                 </a>
             </li>
-
+            
             <li class='link'>
-                <a href='/faq.html' class='<%- page.title == 'faq' && 'selected' %>'>
-                    <i class="icon-contacts"></i>
-                    FAQ
+                <a href='/tags.html' class='<%- page.title == 'tags' && 'selected' %>'>
+                    <i class="icon-tags"></i>
+                    Tags
                 </a>
             </li>
 
             <li class='link-group'>
-                Categorias
+                <i class="icon-down"></i> Categorias
             </li>
 
             <% site.categories.each(function(category, i) { %>

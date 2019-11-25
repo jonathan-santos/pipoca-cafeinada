@@ -1,0 +1,13 @@
+<main class='tags'>
+    <div class='area-title min'>
+        <h1 class='title'>Tags</h1>
+    </div>
+
+    <div class="content">
+        <% site.tags.each(function(tag, i) { %>
+            <a href="<%- url_for(tag.path) %>" class="tag">
+                <%- tag.name %>
+            </a>
+        <% }) %>
+    </div>
+</main>

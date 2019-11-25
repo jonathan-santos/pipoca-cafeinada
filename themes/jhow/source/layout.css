@@ -186,7 +186,7 @@ main {
     color: #333;
 }
 
-    .category .area-title, .tag .area-title {
+    .area-title.min {
         min-height: 5rem;
     }
 
@@ -217,7 +217,6 @@ footer {
 
 /* #region posts */
 .posts {
-    border-top: 1px solid #000;
     padding: 0.5rem 20%;
 }
 
@@ -258,16 +257,34 @@ footer {
         }
 /* #endregion */
 
-/* #region post page */
-.post .content {
+/* #region page */
+.content {
     border-top: 1px solid #000;
     padding: 0.5rem 2rem;
     overflow: hidden;
 }
 
-.post .content img {
+.content img {
     max-width: 100%;
 }
+/* #endregion */
+
+/* #region tags */
+.tags .content {
+    padding-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .tags .content .tag {
+        margin-right: 1rem;
+        padding: 0.5rem;
+        border-radius: 10px;
+        background-color: var(--primary-color);
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
 /* #endregion */
 
 /* #region Media Queries */
@@ -291,13 +308,14 @@ footer {
 /* #region icomoon */
 @font-face {
     font-family: 'icomoon';
-    src:  url('icomoon/fonts/icomoon.eot?ptg991');
-    src:  url('icomoon/fonts/icomoon.eot?ptg991#iefix') format('embedded-opentype'),
-      url('icomoon/fonts/icomoon.ttf?ptg991') format('truetype'),
-      url('icomoon/fonts/icomoon.woff?ptg991') format('woff'),
-      url('icomoon/fonts/icomoon.svg?ptg991#icomoon') format('svg');
+    src:  url('icomoon/fonts/icomoon.eot?5gfgak');
+    src:  url('icomoon/fonts/icomoon.eot?5gfgak#iefix') format('embedded-opentype'),
+      url('icomoon/fonts/icomoon.ttf?5gfgak') format('truetype'),
+      url('icomoon/fonts/icomoon.woff?5gfgak') format('woff'),
+      url('icomoon/fonts/icomoon.svg?5gfgak#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
+    font-display: block;
   }
   
   [class^="icon-"], [class*=" icon-"] {
@@ -315,13 +333,28 @@ footer {
     -moz-osx-font-smoothing: grayscale;
   }
   
-  .icon-itchio:before {
-    content: "\e900";
+  .icon-faq:before {
+    content: "\f128";
+  }
+  .icon-tags:before {
+    content: "\f02c";
+  }
+  .icon-down:before {
+    content: "\f0d7";
+  }
+  .icon-code:before {
+    content: "\f121";
+  }
+  .icon-archive:before {
+    content: "\f187";
+  }
+  .icon-art:before {
+    content: "\f1fc";
   }
   .icon-heart:before {
     content: "\f004";
   }
-  .icon-user:before {
+  .icon-about:before {
     content: "\f007";
   }
   .icon-home:before {
@@ -330,23 +363,8 @@ footer {
   .icon-twitter:before {
     content: "\f099";
   }
-  .icon-hamburguer-menu:before {
+  .icon-menu:before {
     content: "\f0c9";
-  }
-  .icon-magic:before {
-    content: "\f0d0";
-  }
-  .icon-pinterest:before {
-    content: "\f0d2";
-  }
-  .icon-email:before {
-    content: "\f0e0";
-  }
-  .icon-linkedin:before {
-    content: "\f0e1";
-  }
-  .icon-portfolio:before {
-    content: "\f0f2";
   }
   .icon-github:before {
     content: "\f113";
@@ -354,20 +372,7 @@ footer {
   .icon-games:before {
     content: "\f11b";
   }
-  .icon-frontend:before {
-    content: "\f13b";
-  }
-  .icon-backend:before {
-    content: "\f1c0";
-  }
   .icon-blog:before {
     content: "\f1ea";
-  }
-  .icon-contacts:before {
-    content: "\f2b9";
-  }
-  .icon-meetup:before {
-    content: "\f2e0";
-  }
-  
+  }  
 /* #endregion */
