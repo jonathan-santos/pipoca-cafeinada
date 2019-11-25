@@ -10,8 +10,6 @@
     <div class='posts'>
         <% site.posts.each(function(post, i) { %>
 
-            <!-- <%- url_for(post.path) %> -->
-
             <div class='post'>
                 <div class='details'>
                     <div class='tags'>
@@ -23,7 +21,7 @@
                     <span class='date'><%- date(post.date, 'DD/MM/YYYY') %></span>
                 </div>
                 
-                <a href='<%- post.path %>' class='no-underline'>
+                <a href='<%- url_for(post.path) %>' class='no-underline'>
                     <h2 class='title'><%- post.title %></h2>
 
                     <% if (post.synopsis) { %>

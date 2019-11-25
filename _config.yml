@@ -1,7 +1,7 @@
 # Site
 title: Pipoca Cafeinada
 subtitle:
-description: Um Blog sobre randomicidades que me interessam
+description: Um blog sobre um desenvolvedor fascinado demais com jogos e Web, arte e pipoca com café
 keywords: 
 author: Jhow
 language: pt
@@ -73,6 +73,7 @@ primaryColor: '#ff2d9a'
 secondaryColor: '#1a2a3a'
 textLightColor: '#eee'
 textDarkColor: '#333'
+backgroudnColor: '#eee'
 
 ## Posts
 topPosts: ['pt/criando-um-ambiente-minimo-para-react-2', 'pt/criando-um-ambiente-minimo-para-react-1', 'pt/oila' ]
