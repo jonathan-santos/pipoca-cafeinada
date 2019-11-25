@@ -11,7 +11,6 @@
         <% } %>
     </title>
 
-    <link rel='stylesheet' href='/icomoon/style.css'>
     <link rel='stylesheet' href='/layout.css'>
 
     <style>
@@ -31,62 +30,7 @@
         </a>
     <% } %>
 
-
-    <label for='input-menu' role='button' aria-label='Menu' class='menu-button'>
-        <i class='icon-hamburguer-menu'></i>
-    </label>
-
-    <input id='input-menu' type='checkbox' checked hidden />
-
-    <header class='menu'>
-        <label for='input-menu' class='menu-close' tabindex='-1' aria-hidden='true'></label>
-        <nav role='navigation'>
-            <div class='area-logo' aria-hidden='true'>
-                <div class='logo'>
-                    <img src='/logo.png'>
-                </div>
-            </div>
-            <ul>
-                <li>
-                    <a href='/' class='no-underline <%- is_home() && 'selected' %>'>
-                        <i class="icon-home"></i>
-                        Home
-                    </a>
-                </li>
-
-                <li>
-                    <a href='/sobre' class='no-underline <%- page.title == 'sobre' && 'selected' %>'>
-                        <i class="icon-user"></i>
-                        Sobre
-                    </a>
-                </li>
-
-                <li>
-                    <a href='/faq' class='no-underline <%- page.title == 'faq' && 'selected' %>'>
-                        <i class="icon-contacts"></i>
-                        FAQ
-                    </a>
-                </li>
-
-                <li>
-                    <a href='/categories' class='no-underline <%- page.title == 'categories' && 'selected' %>'>
-                        <i class="icon-blog"></i>
-                        Categorias
-                    </a>
-                </li>
-
-                <% site.categories.each(function(category, i) { %>
-                    <li>
-                        <a href='' class='no-underline'>
-                            <i class="icon-blog"></i>
-                            <%- titlecase(category.name) %>
-                        </a>
-                    </li>
-                <% }) %>
-                
-            </ul>
-        </nav>
-    </header>
+    <%- partial('partial/menu') %>
 
     <%- body %>
 

@@ -1,0 +1,24 @@
+<div class='posts'>
+    <% posts.each(function(post, i) { %>
+
+        <div class='post'>
+            <div class='details'>
+                <div class='tags'>
+                    <% post.tags.each(function(tag, i) { %>
+                        <a href='<%- url_for(tag.path) %>' class='tag no-underline'><%- tag.name %></span>
+                    <% }) %>
+                </div>
+
+                <span class='date'><%- date(post.date, 'DD/MM/YYYY') %></span>
+            </div>
+            
+            <a href='<%- url_for(post.path) %>' class='no-underline'>
+                <h2 class='title'><%- post.title %></h2>
+
+                <% if (post.synopsis) { %>
+                    <p class='synopsis'><%- post.synopsis %>...</p>
+                <% } %>
+            </a>
+        </div>
+    <% }) %>
+</div>

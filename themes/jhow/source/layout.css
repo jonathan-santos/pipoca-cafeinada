@@ -125,7 +125,7 @@ main {
             border-top: 1px solid var(--text-light-color);
         }
 
-        .menu li a {
+        .menu .link-group {
             width: 100%;
             height: 2.25rem;
             padding: 0.75rem;
@@ -135,13 +135,28 @@ main {
             line-height: 2.5rem;
         }
 
-            .menu li i {
+        .menu .link a {
+            width: 100%;
+            height: 2.25rem;
+            padding: 0.75rem;
+            border-bottom: 1px solid var(--text-light-color);
+            display: inline-block;
+            font-size: 1.3rem;
+            line-height: 2.5rem;
+            text-decoration: none;
+        }
+
+            .menu .link i {
                 margin-right: 0.5rem;
             }
 
-            .menu li a.selected, .menu li a:hover, .menu li a:active {
+            .menu .link a.selected, .menu .link a:hover, .menu .link a:active {
                 background-color: var(--primary-color);
             }
+
+        .menu .link.category a {
+            padding-left: 2rem;
+        }
 /* #endregion */
 
 /* #region homeButton */
@@ -171,6 +186,10 @@ main {
     color: #333;
 }
 
+    .category .area-title, .tag .area-title {
+        min-height: 5rem;
+    }
+
     .area-title .title {
         font-size: 3rem;
     }
@@ -196,6 +215,61 @@ footer {
 }
 /* #endregion */
 
+/* #region posts */
+.posts {
+    border-top: 1px solid #000;
+    padding: 0.5rem 20%;
+}
+
+    .posts .post {
+        margin: 1rem 0;
+        padding: 0.75rem 0.5rem 0.5rem 0.5rem;
+        border: 1px solid black;
+        border-radius: 5px;
+    }
+
+    .posts .post .details {
+        padding: 0 0.5rem;
+        display: flex;
+    }
+
+        .posts .post .tag {
+            margin-right: 0.25rem;
+            padding: 0.225rem;
+            border-radius: 10px;
+            flex: 1;
+            background-color: var(--primary-color);
+            text-align: center;
+        }
+
+        .posts .post .date {
+            text-align: right;
+            flex: 1;
+        }
+
+        .posts .post .title {
+            margin: 0.5rem 0;
+            font-size: 1.15rem;
+        }
+
+        .posts .post .synopsis {
+            margin: 0;
+            font-size: 1rem;
+        }
+/* #endregion */
+
+/* #region post page */
+.post .content {
+    border-top: 1px solid #000;
+    padding: 0.5rem 2rem;
+    overflow: hidden;
+}
+
+.post .content img {
+    max-width: 100%;
+}
+/* #endregion */
+
 /* #region Media Queries */
 @media (max-width: 420px) {
     .area-title .title {
@@ -207,9 +281,93 @@ footer {
         font-size: 1.1rem;
     }
 
-    footer {
-        font-size: ;
+    .posts {
+        padding: 0.5rem 5%;
     }
 }
 
+/* #endregion */
+
+/* #region icomoon */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('icomoon/fonts/icomoon.eot?ptg991');
+    src:  url('icomoon/fonts/icomoon.eot?ptg991#iefix') format('embedded-opentype'),
+      url('icomoon/fonts/icomoon.ttf?ptg991') format('truetype'),
+      url('icomoon/fonts/icomoon.woff?ptg991') format('woff'),
+      url('icomoon/fonts/icomoon.svg?ptg991#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-itchio:before {
+    content: "\e900";
+  }
+  .icon-heart:before {
+    content: "\f004";
+  }
+  .icon-user:before {
+    content: "\f007";
+  }
+  .icon-home:before {
+    content: "\f015";
+  }
+  .icon-twitter:before {
+    content: "\f099";
+  }
+  .icon-hamburguer-menu:before {
+    content: "\f0c9";
+  }
+  .icon-magic:before {
+    content: "\f0d0";
+  }
+  .icon-pinterest:before {
+    content: "\f0d2";
+  }
+  .icon-email:before {
+    content: "\f0e0";
+  }
+  .icon-linkedin:before {
+    content: "\f0e1";
+  }
+  .icon-portfolio:before {
+    content: "\f0f2";
+  }
+  .icon-github:before {
+    content: "\f113";
+  }
+  .icon-games:before {
+    content: "\f11b";
+  }
+  .icon-frontend:before {
+    content: "\f13b";
+  }
+  .icon-backend:before {
+    content: "\f1c0";
+  }
+  .icon-blog:before {
+    content: "\f1ea";
+  }
+  .icon-contacts:before {
+    content: "\f2b9";
+  }
+  .icon-meetup:before {
+    content: "\f2e0";
+  }
+  
 /* #endregion */

@@ -1,0 +1,53 @@
+<label for='input-menu' role='button' aria-label='Menu' class='menu-button'>
+    <i class='icon-hamburguer-menu'></i>
+</label>
+
+<input id='input-menu' type='checkbox' hidden />
+
+<header class='menu'>
+    <label for='input-menu' class='menu-close' tabindex='-1' aria-hidden='true'></label>
+
+    <nav role='navigation'>
+        <div class='area-logo' aria-hidden='true'>
+            <div class='logo'>
+                <img src='/logo.png'>
+            </div>
+        </div>
+        <ul>
+            <li class='link'>
+                <a href='/' class='first-link <%- is_home() && 'selected' %>'>
+                    <i class="icon-home"></i>
+                    Home
+                </a>
+            </li>
+
+            <li class='link'>
+                <a href='/sobre.html' class='<%- page.title == 'sobre' && 'selected' %>'>
+                    <i class="icon-user"></i>
+                    Sobre
+                </a>
+            </li>
+
+            <li class='link'>
+                <a href='/faq.html' class='<%- page.title == 'faq' && 'selected' %>'>
+                    <i class="icon-contacts"></i>
+                    FAQ
+                </a>
+            </li>
+
+            <li class='link-group'>
+                Categorias
+            </li>
+
+            <% site.categories.each(function(category, i) { %>
+                <li class='link category'>
+                    <a href='<%- url_for(category.path) %>' class='<%- page.category == category.name && 'selected' %>'>
+                        <i class="icon-blog"></i>
+                        <%- titlecase(category.name) %>
+                    </a>
+                </li>
+            <% }) %>
+            
+        </ul>
+    </nav>
+</header>
