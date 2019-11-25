@@ -58,7 +58,7 @@ main {
     box-sizing: border-box;
     background-color: var(--background-color);
     font-size: 1.15rem;
-    line-height: 1.88rem;
+    line-height: 2.1rem;
     text-align: center;
 }
 
@@ -153,6 +153,7 @@ main {
     height: 2.2rem;
     margin: 0.35rem;
     border: 0.125rem solid var(--text-dark-color);
+    border-radius: 5px;
     cursor: pointer;
     box-sizing: border-box;
     background-color: var(--background-color);

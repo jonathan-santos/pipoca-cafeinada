@@ -11,6 +11,7 @@
         <% } %>
     </title>
 
+    <link rel='stylesheet' href='/icomoon/style.css'>
     <link rel='stylesheet' href='/layout.css'>
 
     <style>
@@ -24,19 +25,18 @@
     </style>
 </head>
 <body>
-
     <% if(!is_home()) { %>
         <a href='/' class='home-button'>
-            H
+            <i class='icon-home'></i>
         </a>
     <% } %>
 
-    
+
     <label for='input-menu' role='button' aria-label='Menu' class='menu-button'>
-        M
+        <i class='icon-hamburguer-menu'></i>
     </label>
 
-    <input id='input-menu' type='checkbox' hidden />
+    <input id='input-menu' type='checkbox' checked hidden />
 
     <header class='menu'>
         <label for='input-menu' class='menu-close' tabindex='-1' aria-hidden='true'></label>
@@ -47,17 +47,43 @@
                 </div>
             </div>
             <ul>
-                <li class=''>
-                    <a href='/' class='selected'>Home</a>
+                <li>
+                    <a href='/' class='no-underline <%- is_home() && 'selected' %>'>
+                        <i class="icon-home"></i>
+                        Home
+                    </a>
                 </li>
 
-                <% site.pages.each(function(page, i) { %>
+                <li>
+                    <a href='/sobre' class='no-underline <%- page.title == 'sobre' && 'selected' %>'>
+                        <i class="icon-user"></i>
+                        Sobre
+                    </a>
+                </li>
+
+                <li>
+                    <a href='/faq' class='no-underline <%- page.title == 'faq' && 'selected' %>'>
+                        <i class="icon-contacts"></i>
+                        FAQ
+                    </a>
+                </li>
+
+                <li>
+                    <a href='/categories' class='no-underline <%- page.title == 'categories' && 'selected' %>'>
+                        <i class="icon-blog"></i>
+                        Categorias
+                    </a>
+                </li>
+
+                <% site.categories.each(function(category, i) { %>
                     <li>
-                        <a href='<%- url_for(page.path) %>'>
-                            <%- titlecase(page.title) %>
+                        <a href='' class='no-underline'>
+                            <i class="icon-blog"></i>
+                            <%- titlecase(category.name) %>
                         </a>
                     </li>
                 <% }) %>
+                
             </ul>
         </nav>
     </header>
@@ -65,7 +91,7 @@
     <%- body %>
 
     <footer>
-        <p>Blog feito com HTML, CSS, <a href='https://hexo.io' target='_blank'>Hexo</a>, Amor e pipoca com café</p>
+        <p>Blog feito com HTML, CSS, <a href='https://hexo.io' target='_blank'>Hexo</a>, <i class="icon-heart"></i> e pipoca com café</p>
         <p>Curiosidade de como o blog foi feito? <a href='https://github.com/jonathan-santos/pipocacafeinada' target='_blank'>Acesse o repositório do projeto</a></p>
     </footer>
 </body>

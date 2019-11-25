@@ -1,7 +1,10 @@
 ---
 title:  Criando um ambiente mínimo para React com Webpack 4 e Babel 7 parte II
 date: 2019-04-01
+category: dev
 tags:
+- react
+- web
 ---
 
 ## Introdução
