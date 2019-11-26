@@ -1,0 +1,3 @@
+[submodule "themes/jhow-theme"]
+	path = themes/jhow-theme
+	url = https://github.com/jonathan-santos/jhow-theme

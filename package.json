@@ -3,7 +3,7 @@
   "version": "0.2.1",
   "scripts": {
     "start": "hexo serve --dev --open",
-    "publish": "hexo deploy"
+    "deploy": "hexo deploy"
   },
   "hexo": {
     "version": "3.9.0"
