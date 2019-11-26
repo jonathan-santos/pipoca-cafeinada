@@ -35,7 +35,7 @@ devServer: {
 ```
 
 E modifique o `package.json` para que tenha um novo NPM Script para que execute o nosso servidor de desenvolvimento webpack:
-``` json
+``` js
 //...
 "scripts": {
     "build": "webpack --mode production",

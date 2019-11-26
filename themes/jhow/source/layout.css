@@ -23,19 +23,6 @@ main {
     min-height: 100%;
     padding-bottom: 10rem;
 }
-
-.highlight {
-    background-color: var(--secondary-color);
-    color: var(--text-light-color);
-}
-
-    .highlight .gutter {
-        border-right: 1px solid  var(--text-light-color);
-    }
-
-    .highlight .code {
-        padding-left: 0.2rem;
-    }
 /* #endregion */
 
 /* #region Helper classes */
@@ -162,7 +149,7 @@ main {
 /* #region homeButton */
 .home-button {
     position: absolute;
-    left: 0.1rem;
+    left: 0.2rem;
     top: 0.5rem;
     width: 2.2rem;
     height: 2.2rem;
@@ -376,3 +363,139 @@ footer {
     content: "\f1ea";
   }  
 /* #endregion */
+
+/* #region code */
+.content pre,
+.content .highlight {
+  background: var(--secondary-color);
+  margin: 0 -2rem;
+  padding: 15px 20px;
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 1px 0;
+  overflow: auto;
+  color: var(--text-light-color);
+  line-height: 22.400000000000002px;
+}
+.content .highlight .gutter pre,
+.content .gist .gist-file .gist-data .line-numbers {
+    user-select: none;
+    color: #888;
+    font-size: 0.85em;
+}
+.content pre,
+.content code {
+  font-family: Consolas, Monaco, Menlo, Consolas, monospace;
+}
+.content code {
+  background: var(--text-light-color);
+  text-shadow: 0 1px #fff;
+  padding: 0 0.3em;
+}
+.content pre code {
+  background: none;
+  text-shadow: none;
+  padding: 0;
+}
+.content .highlight pre {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.content .highlight table {
+  margin: 0;
+  width: auto;
+}
+.content .highlight td {
+  border: none;
+  padding: 0;
+}
+.content .highlight figcaption {
+  font-size: 0.85em;
+  color: var(--text-light-color);
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+.content .highlight figcaption:before,
+.content .highlight figcaption:after {
+  content: "";
+  display: table;
+}
+.content .highlight figcaption:after {
+  clear: both;
+}
+.content .highlight figcaption a {
+  float: right;
+}
+.content .highlight .gutter pre {
+  text-align: right;
+  padding-right: 20px;
+}
+.content .highlight .line {
+  height: 22.400000000000002px;
+}
+.content .highlight .line.marked {
+  background: #8BE9FD;
+}
+pre .comment,
+pre .title {
+  color: #8BE9FD;
+}
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: #FF79C6;
+}
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant {
+  color: #FF79C6;
+}
+pre .class,
+pre .ruby .class .title,
+pre .css .rules .attribute {
+  color: #8BE9FD;
+}
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata {
+  color: #8BE9FD;
+}
+pre .css .hexcolor {
+  color: #8BE9FD;
+}
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: #8BE9FD;
+}
+pre .keyword,
+pre .javascript .function {
+  color: #FF79C6;
+}
+
+.bash .code .line::before  {
+    content: "$ ";
+    user-select: none;
+    color: #FF79C6;
+}
