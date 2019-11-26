@@ -75,5 +75,8 @@ textLightColor: '#eee'
 textDarkColor: '#333'
 backgroundColor: '#eee'
 
+## Images
+logo: /img/logo.png
+
 ## Posts
 topPosts: ['pt/criando-um-ambiente-minimo-para-react-2', 'pt/criando-um-ambiente-minimo-para-react-1', 'pt/oila' ]
