@@ -25,3 +25,6 @@ Charmander
 
 ## O que você gosta de fazer?
 Jogar videogames, assistir filmes, ler alguma coisa, assistir vídeos no youtube, divagar sobre a existência, passear com o cachorro, etc.
+
+## E porque você está respondendo todas essas perguntas meio randômicas?
+Bem, eu acredito firmemente que o melhor jeito de se conhecer uma pessoa é saber sobre o que gosta e faz, então cá está!
