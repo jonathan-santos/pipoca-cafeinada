@@ -58,6 +58,10 @@ pagination_dir: page
 
 # Extensions
 theme: jhow-theme
+theme_config:
+  noFaq: false
+  primaryColor: '#ff2d9a'
+  secondaryColor: '#8be9fd'
 
 # Deployment
 deploy:
