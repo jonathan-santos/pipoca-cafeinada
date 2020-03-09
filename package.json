@@ -1,9 +1,8 @@
 {
-  "name": "pipoca-cafeinada",
-  "version": "0.2.1",
+  "name": "pipocacafeinada",
+  "version": "1.0.0",
   "scripts": {
-    "start": "hexo serve --dev --open",
-    "deploy": "hexo generate && hexo deploy"
+    "start": "hexo serve --dev --open"
   },
   "hexo": {
     "version": "3.9.0"

@@ -6,3 +6,6 @@ node_modules/
 public/
 .deploy*/
 .vscode/
+source/_posts/*
+!source/_posts/oila.md
+!source/_posts/oila/
