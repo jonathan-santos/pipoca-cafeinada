@@ -7,5 +7,5 @@ public/
 .deploy*/
 .vscode/
 source/_posts/*
-!source/_posts/oila.md
-!source/_posts/oila/
+!source/_posts/pt/oila.md
+!source/_posts/pt/oila/
