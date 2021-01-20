@@ -9,3 +9,5 @@ public/
 source/_posts/*
 !source/_posts/pt/oila.md
 !source/_posts/pt/oila/
+# Local Netlify folder
+.netlify
