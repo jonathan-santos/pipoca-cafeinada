@@ -26,7 +26,8 @@ i18n_dir: :lang
 new_post_name: :lang/:title.md
 default_layout: post
 titlecase: false
-external_link: true
+external_link:
+  enable: true
 filename_case: 1
 render_drafts: false
 post_asset_folder: true
@@ -62,6 +63,3 @@ theme_config:
   noFaq: false
   primaryColor: '#ff2d9a'
   secondaryColor: '#8be9fd'
-
-# Theme
-footerText: Blog feito com HTML, CSS, <a href='https://hexo.io' target='_blank'>Hexo</a>, <i class="icon-heart"></i> e pipoca com café
