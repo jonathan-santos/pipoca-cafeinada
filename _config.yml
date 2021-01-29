@@ -1,15 +1,15 @@
-# Site
-title: Pipoca Cafeinada
-subtitle:
-description: Um blog sobre um desenvolvedor fascinado demais com jogos e Web, arte e pipoca com café
-keywords: 
-author: Jhow
-language: pt
+# i18n
 timezone: America/Sao_Paulo
+language:
+- en
+- pt
+i18n:
+  type: [page, post]
+  generator: [category, tag, index]
 
 # URL
-url: https://pipocacafeinada.com.br
-repo: https://github.com/jonathan-santos/pipocacafeinada
+url: https://blog.jhow.io
+repo: https://github.com/jonathan-santos/pipoca-cafeinada
 root: /
 permalink: :lang/:title/
 
@@ -17,9 +17,7 @@ permalink: :lang/:title/
 source_dir: source
 public_dir: public
 tag_dir: tags
-archive_dir: archives
 category_dir: categories
-code_dir: downloads/code
 i18n_dir: :lang
 
 # Writing
@@ -37,12 +35,9 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  
-# Home page setting
-index_generator:
-  path: ''
-  per_page: 10
-  order_by: -date
+
+# Pagination
+per_page: 0
   
 # Category & Tag
 default_category: uncategorized
@@ -52,10 +47,6 @@ tag_map:
 # Date / Time format
 date_format: DD/MM/YYYY
 time_format: HH:mm:ss
-
-# Pagination
-per_page: 10
-pagination_dir: page
 
 # Extensions
 theme: hexo-jhow-theme
