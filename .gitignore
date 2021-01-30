@@ -7,7 +7,6 @@ public/
 .deploy*/
 .vscode/
 source/_posts/*
-!source/_posts/pt/oila.md
-!source/_posts/pt/oila/
+source/_drafts/*
 # Local Netlify folder
 .netlify
