@@ -1,8 +1,8 @@
 # i18n
 timezone: America/Sao_Paulo
 language:
-- en
-- pt
+  - en
+  - pt
 i18n:
   type: [page, post]
   generator: [category, tag, index]
@@ -55,4 +55,3 @@ theme: hexo-jhow-theme
 theme_config:
   noFaq: false
   primaryColor: '#ff2d9a'
-  secondaryColor: '#8be9fd'
