@@ -48,7 +48,7 @@ highlight:
 prismjs:
   enable: true
   preprocess: true
-  line_number: true
+  line_number: false
 
 # Extensions
 theme: hexo-jhow-theme
