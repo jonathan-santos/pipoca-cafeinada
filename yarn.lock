@@ -1220,6 +1220,13 @@ hexo-generator-category@^1.0.0:
   dependencies:
     hexo-pagination "1.0.0"
 
+hexo-generator-i18n@0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/hexo-generator-i18n/-/hexo-generator-i18n-0.0.10.tgz#1b7e42d1039fafd7600ffda41b64d588463a9887"
+  integrity sha512-MMKgo125xlzMeimxoaaI6udzER0MBIlLM7Cgda/HuMGcq+nfxqg+36AYnQs/zukCdNbWSesuOwW48BTbWBNaRA==
+  dependencies:
+    lodash "^4.15.0"
+
 hexo-generator-index@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/hexo-generator-index/-/hexo-generator-index-2.0.0.tgz#15e71f4d28ee9d2172e2d77e8d1dba04882edc8f"
@@ -1253,6 +1260,11 @@ hexo-pagination@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/hexo-pagination/-/hexo-pagination-1.0.0.tgz#c9c0ca3665267b9e9d0a89fc3edcaf3276907dc1"
   integrity sha512-miEVFgxchPr2qNWxw0JWpJ9R/Yaf7HjHBZVjvCCcqfbsLyYtCvIfJDxcEwz1sDOC/fLzYPqNnhUI73uNxBHRSA==
+
+hexo-prism-copy-button@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/hexo-prism-copy-button/-/hexo-prism-copy-button-1.0.2.tgz#f11ca4afbaecd822c26c658c6f7ac5f8fb10ce1b"
+  integrity sha512-HOHX9Cv0zMjDeuBAMVhbtEp1x24APQeOGl9qwdtAUCrw87tRLjJVqwsM49Ubow4IQrBQLHmsgOAYxQTOjK9yTw==
 
 hexo-renderer-ejs@1.0.0:
   version "1.0.0"
@@ -1718,10 +1730,10 @@ lodash.isfinite@^3.3.2:
   resolved "https://registry.yarnpkg.com/lodash.isfinite/-/lodash.isfinite-3.3.2.tgz#fb89b65a9a80281833f0b7478b3a5104f898ebb3"
   integrity sha1-+4m2WpqAKBgz8LdHizpRBPiY67M=
 
-lodash@^4.17.10:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+lodash@^4.15.0, lodash@^4.17.10:
+  version "4.17.20"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
+  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
 
 lower-case@^2.0.2:
   version "2.0.2"
