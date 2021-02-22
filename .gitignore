@@ -6,7 +6,8 @@ node_modules/
 public/
 .deploy*/
 .vscode/
-source/_posts/*
-source/_drafts/*
+source/_posts/
+source/_drafts/
+source/assets/
 # Local Netlify folder
 .netlify
