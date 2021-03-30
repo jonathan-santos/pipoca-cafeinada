@@ -1220,6 +1220,13 @@ hexo-generator-category@^1.0.0:
   dependencies:
     hexo-pagination "1.0.0"
 
+hexo-generator-i18n@0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/hexo-generator-i18n/-/hexo-generator-i18n-0.0.10.tgz#1b7e42d1039fafd7600ffda41b64d588463a9887"
+  integrity sha512-MMKgo125xlzMeimxoaaI6udzER0MBIlLM7Cgda/HuMGcq+nfxqg+36AYnQs/zukCdNbWSesuOwW48BTbWBNaRA==
+  dependencies:
+    lodash "^4.15.0"
+
 hexo-generator-index@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/hexo-generator-index/-/hexo-generator-index-2.0.0.tgz#15e71f4d28ee9d2172e2d77e8d1dba04882edc8f"
@@ -1253,6 +1260,11 @@ hexo-pagination@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/hexo-pagination/-/hexo-pagination-1.0.0.tgz#c9c0ca3665267b9e9d0a89fc3edcaf3276907dc1"
   integrity sha512-miEVFgxchPr2qNWxw0JWpJ9R/Yaf7HjHBZVjvCCcqfbsLyYtCvIfJDxcEwz1sDOC/fLzYPqNnhUI73uNxBHRSA==
+
+hexo-prism-copy-button@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/hexo-prism-copy-button/-/hexo-prism-copy-button-1.0.3.tgz#d9b17a93c2df633fde970afe7a32576ce6676f64"
+  integrity sha512-i781pGHNWYJ27UjTN6J7nFGZUPHhaH+Iu0qapSlIxQLO8luwegytUzWMd/Rm5Ns7JNd7Rbkn8aJ4n3YKmnwkwQ==
 
 hexo-renderer-ejs@1.0.0:
   version "1.0.0"
@@ -1717,6 +1729,11 @@ lodash.isfinite@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/lodash.isfinite/-/lodash.isfinite-3.3.2.tgz#fb89b65a9a80281833f0b7478b3a5104f898ebb3"
   integrity sha1-+4m2WpqAKBgz8LdHizpRBPiY67M=
+
+lodash@^4.15.0:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 lodash@^4.17.10:
   version "4.17.15"
@@ -3030,9 +3047,9 @@ xmlhttprequest-ssl@~1.5.4:
   integrity sha1-wodrBhaKrcQOV9l+gRkayPQ5iz4=
 
 y18n@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
-  integrity sha1-bRX7qITAhnnA136I53WegR4H+kE=
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.2.tgz#85c901bd6470ce71fc4bb723ad209b70f7f28696"
+  integrity sha512-uGZHXkHnhF0XeeAPgnKfPv1bgKAYyVvmNL1xlKsPYZPaIHxGti2hHqvOCQv71XMsLxu1QjergkqogUnms5D3YQ==
 
 yargs-parser@^4.1.0, yargs-parser@^4.2.0:
   version "4.2.1"
